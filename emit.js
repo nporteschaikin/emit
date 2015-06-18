@@ -52,15 +52,6 @@
         }
       }
       return this;
-    },
-
-    once: function (ev, callback) {
-      var self = this;
-      var fn = function () {
-        self.off(ev, callback);
-        callback.apply(self, arguments);
-      }
-      return self.on(ev, callback);
     }
 
   };
