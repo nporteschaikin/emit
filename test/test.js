@@ -63,4 +63,18 @@ describe('emit', function () {
 
   });
 
+  describe('emit', function () {
+
+    it('should emit', function (done) {
+      var eventEmitter = new EventEmitter();
+      var foo;
+      should(foo).not.be.ok;
+      eventEmitter.on('foo', function () { foo = 'test' });
+      eventEmitter.emit('foo');
+      should(foo).eql('test');
+      done();
+    });
+
+  })
+
 });
