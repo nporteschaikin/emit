@@ -1,5 +1,5 @@
 {
-  "name": "emit",
+  "name": "microemit",
   "version": "0.0.2",
   "author": "Noah Portes Chaikin <noah@porteschaikin.com>",
   "description": "An impossibly small but robust event emitter",
